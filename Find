@@ -1,0 +1,8 @@
+def dec_to_nase(num,base):
+    if num == 0:
+        return "0"
+    digits = []
+    while num:
+        digits.append(int(num % base))
+        num //= base
+    return ''.join(str(x) for x in digits[::-1])

@@ -1,0 +1,7 @@
+class_A = ("ABC", "BBC", "CCC", "DDD", "EEE")
+class_B = ("CCC", "EEE", "FFF", "GGG", "ABC")
+A = set(class_A)
+B = set(class_B)
+print(A & B)
+print(A-B)
+print(B-A)
